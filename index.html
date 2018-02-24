@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Xian's Crystal Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Bootstrap is used to make game look nicer -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+</head>
+
+<body background="assets/images/background.png">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap Container will hold everything -->
+    <div class="container">
+        <!-- Jumbotron holds the title section -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Collect the Crystals!</h1>
+            </div>
+        </div>
+        <div class="panel panel-default" id="instructions">
+            <div class="panel-body">
+                <p>You will be given a random number at the start of the game </p>
+                <br>
+                <p>There are 4 crystals below. By clicking on a crystal you will add a certain amount to your score.</p>
+                <br>
+                <p>You win the game by matching your total score to the random number.</p>
+                <p>You lose the game if your total score goes above the random number.</p>
+                <br>
+                <p>Each time the game starts, the value of each crystal is changed</p>
+                <br>
+            </div>
+        </div>
+        <!-- <div class="panel panel-default" id="newGame">
+            <div class="panel-body">
+                <input type='button' id='newGameBut'> </div>
+        </div> -->
+        <div class="panel panel-default" id="gameNumber">
+            <div class="panel-body">
+                <p></p>
+            </div>
+        </div>
+
+        <!-- container to hold wins/losses -->
+        <div class="panel panel-default" id="counters">
+            <div class="panel-body">
+                <span id="wins">0</span>
+                <span id="lose">0</span>
+
+            </div>
+        </div>
+
+        <!-- container to hold crystals -->
+        <div class="container" id="crystalChest">
+            <div class="row" id="buttons">
+                <div class="col-sm-3" id="btn1">
+                    <img src="assets/images/bluegem.png" id="blue" class="gem" alt="bluegem" width="100px" height="100px">
+                </div>
+                <div class="col-sm-3" id="btn2">
+                    <img src="assets/images/redgem.png" id="red" class="gem" alt="redgem" width="100px" height="100px">
+                </div>
+                <div class="col-sm-3" id="btn3">
+                    <img src="assets/images/greengem.png" id="green" class="gem" alt="greengem" width="100px" height="100px">
+                </div>
+                <div class="col-sm-3" id="btn4">
+                    <img src="assets/images/yellowgem.png" id="yellow" class="gem" alt="yellowgem" width="100px" height="100px">
+                </div>
+            </div>
+        </div>
+        <!-- total score -->
+        <div class="panel panel-default" id="totalScore">
+            <div class="panel-body">
+            </div>
+        </div>
+
+        <!-- container to hold total score -->
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <input type='button' id='reset' value='reset' />
+            </div>
+        </div>
+
+        <script type="text/javascript" src="assets/javascript/game.js" href="assets/javascript/game.js"></script>
+</body>
+
+</html>

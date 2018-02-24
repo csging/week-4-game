@@ -1,0 +1,23 @@
+#instructions {
+    background-color: aqua;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+#counters {
+    background-color: yellow;
+    font-size: 26px;
+}
+
+#jumbotron {
+    background-color: blue;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#totalScore {
+    background-color: green;
+}
