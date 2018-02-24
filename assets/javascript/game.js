@@ -34,26 +34,26 @@ $(document).ready(function() {
             return number
         }
 
-        // function reset() {
-        //     // initGame();
-        //     let cOne = crystalNumFunc();
-        //     $("#btn1").attr("value", cOne);
-        //     let cTwo = crystalNumFunc();
-        //     $("#btn2").attr("value", cTwo);
-        //     let cThree = crystalNumFunc();
-        //     $("#btn3").attr("value", cThree);
-        //     let cFour = crystalNumFunc();
-        //     $("#btn4").attr("value", cFour);
-        //     //counters
-        //     // $("#counters").text("wins: " + wins + "  " + "losses: " + lose);
+        function reset() {
+            // initGame();
+            let cOne = crystalNumFunc();
+            $("#btn1").attr("value", cOne);
+            let cTwo = crystalNumFunc();
+            $("#btn2").attr("value", cTwo);
+            let cThree = crystalNumFunc();
+            $("#btn3").attr("value", cThree);
+            let cFour = crystalNumFunc();
+            $("#btn4").attr("value", cFour);
+            //counters
+            // $("#counters").text("wins: " + wins + "  " + "losses: " + lose);
 
-        //     let gameNum = gameRandNum(); // rand num shown to beat
-        //     $("#gameNumber").text("Number to match: " + gameNum);
+            let gameNum = gameRandNum(); // rand num shown to beat
+            $("#gameNumber").text("Number to match: " + gameNum);
 
-        //     // let beatNum = 0; //number shown to beat
-        //     let total = 0; //player total
-        //     $("#totalScore").text("Your Total: " + total);
-        // }
+            // let beatNum = 0; //number shown to beat
+            let total = 0; //player total
+            $("#totalScore").text("Your Total: " + total);
+        }
 
         function crystalNumFunc() {
             var n = 1 + Math.floor(Math.random() * 12);
@@ -78,7 +78,7 @@ $(document).ready(function() {
         createCrystals();
 
 
-        // $('.gem').on("click", function(){
+        // $('.gem').on("click", function() {
         //     crystalNum = $(this).attr("value")
         //     total = total + parseInt(crystalNum);
         //     $("#totalScore").text("Your Total: " + total);
