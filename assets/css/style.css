@@ -1,16 +1,23 @@
     #instructions {
-        background-color: aqua;
+        background-color: #4dffff;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 20px;
     }
     
     #counters {
-        background-color: yellow;
+        background-color: #ffff33;
         font-size: 26px;
     }
     
+    #gameNumber {
+        background-color: #ff1a1a;
+        color: white;
+        font-size: 30px;
+    }
+    
     #jumbotron {
-        background-color: blue;
+        background-color: #1a75ff;
+        font-size: 20px;
     }
     
     body {
@@ -19,5 +26,7 @@
     }
     
     #totalScore {
-        background-color: green;
+        background-color: #47d147;
+        color: white;
+        font-size: 30px;
     }
